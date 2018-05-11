@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 100% !important;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-smooth: always;
+}
+
+.backRight {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #000;
+}
+
+.backLeft {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #148ff5;
+}
+
+#back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -999;
+}
+
+.canvas-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+#slideBox {
+  width: 50%;
+  max-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 50%;
+  position: absolute;
+  box-shadow: 0 -0.5rem 1.25rem 0 rgba(0, 0, 0, 0.28);
+}
+
+.topLayer {
+  width: 200%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  left: -100%;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  position: absolute;
+  overflow-y: scroll;
+}
+.left a {
+  color: #000;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  right: 0;
+  position: absolute;
+  overflow-y: scroll;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content h2 {
+  font-weight: 300;
+  font-size: 2.6em;
+  margin: 0.2em 0 0.1em;
+}
+
+.left .content h2 {
+  color: #148ff5;
+}
+
+.right .content h2 {
+  color: #148ff5;
+}
+
+.form-element {
+  margin: 1.6em 0;
+}
+.form-element.form-submit {
+  margin: 1.6em 0 0;
+}
+
+.form-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  #slideBox {
+    width: 80%;
+    margin-left: 20%;
+  }
+
+  .signup-info, .login-info {
+    display: none;
+  }
+}
+.size {
+  margin-top: 0;
+}
+
+.login-button, .signup {
+  margin-left: 0;
+}
+
+.off, .off:hover, .off, .off:hover {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none !important;
+  font-weight: 700;
+  color: #148ff5;
+}
+
+.checkbox label {
+  font-weight: 100;
+}
+
+.checkbox {
+  margin-left: 0px !important;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.forgot-password {
+  font-size: 12px;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+img {
+  width: 13%;
+  position: absolute;
+  right: 0px;
+  top: 5%;
+}
+
+.checkbox label {
+  margin: 15px 0 10px 12px !important;
+}
